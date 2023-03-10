@@ -1,0 +1,29 @@
+﻿<Page x:Class="DoctorsScheduleWPF.View.Pages.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DoctorsScheduleWPF.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="Авторизация">
+
+    <Grid Background="AliceBlue">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <StackPanel Width="230">
+                <TextBlock Text="Заполните поля Вашими данными" FontStyle="Italic" Margin="5"/>
+                <TextBlock Text="Поля с * обязательны для заполнения" FontStyle="Italic" Margin="5"/>
+            </StackPanel>
+            <StackPanel Width="200">
+                <TextBlock Text="Фамилия *"/>
+                <TextBox x:Name="LastNameTextBox"/>
+            </StackPanel>
+            <StackPanel Width="200">
+                <TextBlock Text="Номер полиса *"/>
+                <TextBox x:Name="PolisTextBox"/>
+            </StackPanel>
+            <Button Content="Войти" Background="ForestGreen" Margin="15"  BorderBrush="#FFCC00" Foreground="AliceBlue" x:Name="AuthButton" Click="AuthButtonClick"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
